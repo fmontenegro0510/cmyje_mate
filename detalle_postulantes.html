@@ -602,18 +602,36 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-            <div class="col-md-6">
+            <div class="row row-cards">
+            
+            <div class="col-lg-3">
               <div class="card">
                 <div class="card-body">
-                  <h3 class="card-title">Project ID</h3>
-                  <p class="card-subtitle">Used when interacting with the API.</p>
-                  <div class="input-icon">
-                    <input type="text" value="prj_5ae74426fe935327a8fa178b07d84ad9" class="form-control" placeholder="Search…" readonly>
-                    <span class="input-icon-addon">
-                      <!-- Download SVG icon from http://tabler-icons.io/i/files -->
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 3v4a1 1 0 0 0 1 1h4" /><path d="M18 17h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h4l5 5v7a2 2 0 0 1 -2 2z" /><path d="M16 17v2a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2" /></svg>
-                    </span>
-                  </div>
+                  <h3 class="card-title">Foto Carnet </h3>
+                  <p class="card-subtitle"></p>
+                  <a data-fslightbox="gallery" href="./static/photos/FranciaReinaldo.jpg">
+                    <!-- Photo -->
+                    <div class="img-responsive img-responsive-3x3 rounded-3 border" style="background-image: url(./static/photos/FranciaReinaldo.jpg)"></div>
+                  </a>
+                </div>
+              </div>
+            </div>    
+            <div class="col-lg-9">
+              <div class="card">
+                <div class="card-body">
+                  <!-- <h3 class="card-title">Datos Personales</h3>
+                  <p class="card-subtitle">Used when interacting with the API.</p> -->
+                  <h3 class="card-title">Datos Personales</h3>
+                  <!-- <p class="m-0 text-muted">Tabler is designed to work great for large enterprises. Take a look at our feature comparison.</p> -->
+
+                  <div class="card-body">
+                    <div class="mb-3 row">
+                      <label class="col-3 col-form-label required">Email address</label>
+                      <div class="col">
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small class="form-hint">We'll never share your email with anyone else.</small>
+                      </div>
+                    </div>
                 </div>
                 <div class="card-footer">
                   <div class="row align-items-center">
@@ -626,24 +644,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h3 class="card-title">Node.js Version</h3>
-                  <p class="card-subtitle">The version of Node.js that is used in the Build Step and for Serverless Functions.
-                    A new Deployment is required for your changes to take effect.</p>
-                  <select class="form-select">
-                    <option>14.x</option>
-                    <option>12.x</option>
-                  </select>
-                </div>
-                <div class="card-footer">
-                  Learn more about <a href="#">Node.js Version</a>
-                </div>
-              </div>
-            </div>
-            
+            </div>   
+          </div>      
           </div>
         </div>
         <footer class="footer footer-transparent d-print-none">
@@ -682,7 +684,8 @@
         </footer>
       </div>
     </div>
-    <!-- Libs JS -->
+        <!-- Libs JS -->
+        <script src="./dist/libs/fslightbox/index.js?1684106062" defer></script>
     <!-- Tabler Core -->
     <script src="./dist/js/tabler.min.js?1684106062" defer></script>
     <script src="./dist/js/demo.min.js?1684106062" defer></script>
