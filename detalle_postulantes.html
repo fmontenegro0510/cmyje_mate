@@ -595,13 +595,42 @@
                 <h2 class="page-title">
                   Detalle de Postulante
                 </h2>
-              </div>
+              </div>  
+              
+
             </div>
           </div>
         </div>
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
+            <div class="row row-cards">
+              <div class="mb-3">
+                <div class="col-lg-12 col-sm-12 col-md-12">
+                  <div class="form-selectgroup">
+                    <label class="form-selectgroup-item" data-bs-toggle="modal" data-bs-target="#modal-documentacion">
+                      <!-- <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-team"> -->
+                      <input type="radio" name="icons" value="user" class="form-selectgroup-input">
+                      <span class="form-selectgroup-label"><!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-databricks">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M3 17l9 5l9 -5v-3l-9 5l-9 -5v-3l9 5l9 -5v-3l-9 5l-9 -5l9 -5l5.418 3.01" />
+                        </svg>
+                        Documentación</span>
+                      <!-- </a> -->
+                    </label>
+                    <label class="form-selectgroup-item" data-bs-toggle="modal" data-bs-target="#modal-concursos">
+                      <input type="radio" name="icons" value="circle" class="form-selectgroup-input">
+                      <span class="form-selectgroup-label"><!-- Download SVG icon from http://tabler-icons.io/i/circle -->
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trophy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 21l8 0" /><path d="M12 17l0 4" /><path d="M7 4l10 0" /><path d="M17 4v8a5 5 0 0 1 -10 0v-8" /><path d="M5 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M19 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /></svg>
+                        Concursos</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row row-cards">
             
             <div class="col-lg-3">
@@ -613,38 +642,214 @@
                     <!-- Photo -->
                     <div class="img-responsive img-responsive-3x3 rounded-3 border" style="background-image: url(./static/photos/FranciaReinaldo.jpg)"></div>
                   </a>
+                  <br>
+
                 </div>
               </div>
             </div>    
             <div class="col-lg-9">
-              <div class="card">
-                <div class="card-body">
-                  <!-- <h3 class="card-title">Datos Personales</h3>
-                  <p class="card-subtitle">Used when interacting with the API.</p> -->
-                  <h3 class="card-title">Datos Personales</h3>
-                  <!-- <p class="m-0 text-muted">Tabler is designed to work great for large enterprises. Take a look at our feature comparison.</p> -->
-
-                  <div class="card-body">
-                    <div class="mb-3 row">
-                      <label class="col-3 col-form-label required">Email address</label>
-                      <div class="col">
-                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small class="form-hint">We'll never share your email with anyone else.</small>
+              <div class="row row-cards">
+                <div class="col-12">
+                  <form class="card">
+                    <div class="card-body">
+                      <h3 class="card-title">Datos Personales</h3>
+                      <hr>
+                      <div class="row row-cards">
+                        <div class="col-md-12">
+                          <div class="mb-3">
+                            <label class="form-label">Apellido y Nombre</label>
+                            <div class="input-icon mb-3">
+                              <span class="input-icon-addon">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                              </span>
+                              <input type="text" value="" class="form-control" placeholder="Apellido y Nombre">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="form-label">DNI</label>
+                            <div class="input-icon mb-3">
+                              <span class="input-icon-addon">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                  class="icon icon-tabler icons-tabler-outline icon-tabler-address-book">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                  <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z" />
+                                  <path d="M10 16h6" />
+                                  <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                  <path d="M4 8h3" />
+                                  <path d="M4 12h3" />
+                                  <path d="M4 16h3" />
+                                </svg>
+                              </span>
+                              <input type="text" value="" class="form-control" placeholder="DNI">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-9">
+                          <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <div class="input-icon mb-3">
+                              <span class="input-icon-addon">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                              </span>
+                              <input type="email" value="" class="form-control" placeholder="email@email.com">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="mb-3">
+                            <label class="form-label">Teléfono</label>
+                            <div class="input-icon mb-3">
+                              <span class="input-icon-addon">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                  class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                  <path
+                                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                </svg>                        
+                              </span>
+                              <input type="number" value="" class="form-control" placeholder="3624 884422">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="mb-3">
+                            <label class="form-label">Fecha de Nacimiento</label>
+                            <div class="input-icon mb-2">
+                              <span class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                              </span>
+                              <input class="form-control" placeholder="Select a date" id="datepicker-icon-prepend" value="2020-06-20"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12  ">
+                          <div class="mb-3">
+                            <label class="form-label">Domicilio</label>
+                            <div class="input-icon mb-3">
+                              <span class="input-icon-addon">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                              </span>
+                              <input type="text" value="PC 110 UF 20 Barrio Mujeres Argentinas" class="form-control" placeholder="Domicilio">
+                            </div>
+                          </div>
+                        </div>
                       </div>
+                      <hr>
+                      <h3 class="card-title">Requisitos Constitucionales</h3>
+                      <hr>
+
+                      <div class="row row-cards">
+                        <div class="col-md-12">
+                          <div class="mb-3">
+                            <label class="form-label">Cargo que ocupa</label>
+                            <div class="input-icon mb-3">
+                              <span class="input-icon-addon">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-building-estate"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21h18" /><path d="M19 21v-4" /><path d="M19 17a2 2 0 0 0 2 -2v-2a2 2 0 1 0 -4 0v2a2 2 0 0 0 2 2z" /><path d="M14 21v-14a3 3 0 0 0 -3 -3h-4a3 3 0 0 0 -3 3v14" /><path d="M9 17v4" /><path d="M8 13h2" /><path d="M8 9h2" /></svg>
+                              </span>
+                              <input type="text" value="" class="form-control" placeholder="Cargo que ocupa">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="mb-3">
+                            <label class="form-label">Nacionalidad</label>
+                            <div class="input-icon mb-3">
+                              <span class="input-icon-addon">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-world"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
+                              </span>
+                              <input type="text" value="" class="form-control" placeholder="Nacionalidad">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="mb-3">
+                            <label class="form-label">Estado civil</label>
+                            <select class="form-select" >
+                              <option value="1">Soltero/a</option>
+                              <option value="2">Casado/a</option>
+                              <option value="3">Viudo/a</option>
+                              <option value="4">Divorciado/a</option>
+                            </select>
+                          </div>
+                        </div>
+                      
+                      <div class="col-sm-8 col-md-8">
+                        <div class="mb-3">
+                          <label class="form-label">Título</label>
+                          <div class="input-icon mb-3">
+                            <span class="input-icon-addon">
+                              <!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-school"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" /><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" /></svg>                            </span>
+                            <input type="text" value="" class="form-control" placeholder="Título">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-md-4">
+                        <div class="mb-3">
+                          <label class="form-label">Fecha de título</label>
+                          <div class="input-icon mb-2">
+                            <span class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                            </span>
+                            <input class="form-control" placeholder="Select a date" id="datepicker-icon-prepend2" value="2020-06-20"/>
+                          </div>
+                        </div>
+                      </div>  
+
+                      <div class="col-sm-6 col-md-6">
+                        <div class="mb-3">
+                          <label class="form-label">Antiguedad en la matricula</label>
+                          <div class="input-icon mb-2">
+                            <span class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                            </span>
+                            <input class="form-control" placeholder="Select a date" id="datepicker-icon-prepend3" value="2020-06-20"/>
+                          </div>
+                          <label class="form-check">
+                            <input class="form-check-input" type="checkbox"  checked>
+                            <span class="form-check-label">No posee</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="mb-3">
+                          <label class="form-label">Antiguedad en la magistratura</label>
+                          <div class="input-icon mb-2">
+                            <span class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                            </span>
+                            <input class="form-control" placeholder="Select a date" id="datepicker-icon-prepend4" value="2020-06-20"/>
+                          </div>
+                          <label class="form-check">
+                            <input class="form-check-input" type="checkbox"  checked>
+                            <span class="form-check-label">No posee</span>
+                          </label>
+                        </div>
+                      </div> 
+                                        
                     </div>
-                </div>
-                <div class="card-footer">
-                  <div class="row align-items-center">
-                    <div class="col">Learn more about <a href="#">Project ID</a></div>
-                    <div class="col-auto">
-                      <a href="#" class="btn btn-primary">
-                        Save
-                      </a>
+                  </div> 
+                  <div class="card-footer text-end">
+                    <div class="d-flex">  
+                      <a href="#" class="btn text-red">Eliminar Postulante</a>
+                      <button type="submit" class="btn btn-primary ms-auto">Modificar</button>
                     </div>
                   </div>
+                  </form>
                 </div>
-              </div>
-            </div>   
+
+              </div>   
           </div>      
           </div>
         </div>
@@ -682,12 +887,218 @@
             </div>
           </div>
         </footer>
+
+
+        <!-- Modals Documentacion-->
+        <div class="modal modal-blur fade" id="modal-documentacion" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Documentación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row mb-3 align-items-end">
+                  <div class="col-lg-12 col-sm-12">
+                    <table class="table table-vcenter table-bordered card-table">
+                      <thead>
+                        <tr>
+                          <td class="w-50">
+                            <h2>Documentación</h2>
+                          </td>
+                          <td class="text-center">
+                            <!-- <div class="text-uppercase text-muted font-weight-medium">Estado</div> -->
+                            <h2>Estado</h2>
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <h4>Antiguedad</h4>
+                          </td>
+                          <td class="text-center"><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                            <h4 class="text-green">01/01/2023</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4>Buena Conducta</h4>
+                          </td>
+                          <td class="text-center"><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                            <h4 class="text-red">01/01/2023</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4>Domicilio</h4>
+                          </td>
+                          <td class="text-center"><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                            <h4 class="text-red">01/01/2023</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4>Foto Carnet</h4>
+                          </td>
+                          <td class="text-center"><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                            <h4 class="text-green">Presentó</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4>Matricula</h4>
+                          </td>
+                          <td class="text-center"><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                            <h4 class="text-red">01/01/2023</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4>Psicofísico</h4>
+                          </td>
+                          <td class="text-center"><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                            <h4 class="text-red">No presentó</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4>R.E.D.A.M.</h4>
+                          </td>
+                          <td class="text-center"><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                            <h4 class="text-red">01/01/2023</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4>R.U.P.V.</h4>
+                          </td>
+                          <td class="text-center"><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                            <h4 class="text-red">01/01/2023</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4>Sanciones</h4>
+                          </td>
+                          <td class="text-center"><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                            <h4 class="text-red">01/01/2023</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4>Título Autenticado</h4>
+                          </td>
+                          <td class="text-center"><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                            <h4 class="text-red">01/01/2023</h4>
+                          </td>
+                        </tr>
+                        <tr class="bg-light">
+                          <th colspan="4" class="subheader">La validez de la documentación se puede consultar desde este <a
+                              href="http://google.com.ar" target="_blank">link</a> </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn me-auto" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Modificar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- End Modals -->
+
+                <!-- Modals Documentacion-->
+                <div class="modal modal-blur fade" id="modal-concursos" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Concursos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row mb-3 align-items-end">
+                          <div class="col-lg-12 col-sm-12">
+                            <table class="table table-vcenter table-bordered card-table">
+                              <thead>
+                                <tr>
+                                  <td class="text-start">
+                                    <h2>Fecha</h2>
+                                  </td>
+                                  <td class="text-start">
+                                    <h2>Concursos en los que se ha inscripto</h2>
+                                  </td>
+                                  <td class="text-start">
+                                    <h2>Nivel de excelencia</h2>
+                                  </td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <h4>14/05/2004</h4>
+                                  </td>
+                                  <td>
+                                    <h4>Defensor Oficial Fuero Penal</h4>
+                                  </td>
+                                  <td>
+                                    <h4 class="text-red">NANE</h4>
+                                  </td>
+                                  
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn me-auto" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Modificar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- End Modals -->
+
+        
+
+
+
+
+
+
       </div>
     </div>
         <!-- Libs JS -->
-        <script src="./dist/libs/fslightbox/index.js?1684106062" defer></script>
+      <script src="./dist/libs/fslightbox/index.js?1684106062" defer></script>
+        <!-- Calendar Library -->
+      <script src="./dist/libs/litepicker/dist/litepicker.js?1684106062" defer></script>
     <!-- Tabler Core -->
     <script src="./dist/js/tabler.min.js?1684106062" defer></script>
     <script src="./dist/js/demo.min.js?1684106062" defer></script>
+    <script>
+      // @formatter:off
+      // Se debe agregar un listener por cada calendario
+      document.addEventListener("DOMContentLoaded", function () {
+        window.Litepicker && (new Litepicker({
+          element: document.getElementById('datepicker-icon-prepend'),
+          lang: 'es-AR',
+          format: 'DD-MM-YYYY',
+          buttonText: {
+            previousMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+            nextMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+          },
+        }));
+      });
+      // @formatter:on
+    </script>
   </body>
 </html>
